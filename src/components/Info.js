@@ -19,11 +19,10 @@ export default function Info() {
 
       <div className="mt-12 mb-4">social Media</div>
       <div className="flex flex-wrap gap-4 md:gap-6 text-neutral-400">
-        <span className="hover:text-white cursor-pointer transition-colors border-b border-neutral-600 hover:border-white pb-0.5">Instagram</span>
-        <span className="hover:text-white cursor-pointer transition-colors border-b border-neutral-600 hover:border-white pb-0.5">threads</span>
-        <span className="hover:text-white cursor-pointer transition-colors border-b border-neutral-600 hover:border-white pb-0.5">X (Twitter)</span>
-        <span className="hover:text-white cursor-pointer transition-colors border-b border-neutral-600 hover:border-white pb-0.5">Behance</span>
-        <span className="hover:text-white cursor-pointer transition-colors border-b border-neutral-600 hover:border-white pb-0.5">Dribbble</span>
+        <a href="https://www.instagram.com/sdymoondesign?utm_source=qr" target="_blank" rel="noopener noreferrer" className="hover:text-white cursor-pointer transition-colors border-b border-neutral-600 hover:border-white pb-0.5">Instagram</a>
+        <a href="https://www.threads.com/@sdymoondesign?hl=en" target="_blank" rel="noopener noreferrer" className="hover:text-white cursor-pointer transition-colors border-b border-neutral-600 hover:border-white pb-0.5">threads</a>
+        <a href="https://x.com/sdymoondesign?s=21" target="_blank" rel="noopener noreferrer" className="hover:text-white cursor-pointer transition-colors border-b border-neutral-600 hover:border-white pb-0.5">X (Twitter)</a>
+        <a href="https://www.behance.net/sdymoondesign" target="_blank" rel="noopener noreferrer" className="hover:text-white cursor-pointer transition-colors border-b border-neutral-600 hover:border-white pb-0.5">Behance</a>
       </div>
     </div>
   );

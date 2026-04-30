@@ -12,7 +12,7 @@ export default function ImageGrid({ activeTab }) {
     1: { category: "logos", src: "/Images/Logos/logo1.png" },
     2: { category: "logos", src: "/Images/Logos/logo4.png" },
     3: { category: "app", src: "/Images/App/app2.png" },
-    4: { category: "website", src: "/Images/Website/Website3.png" },
+    4: { category: "website", src: "/Images/Website/website3.png" },
     5: { category: "website", src: "/Images/Website/website2.png" },
     6: { category: "logo", src: "/Images/Logos/logo5.png" },
     7: { category: "app", src: "/Images/App/app1.png" },
