@@ -122,6 +122,8 @@ export default function ImageGrid({ activeTab }) {
           fill 
           className="object-cover" 
           sizes="(max-width: 768px) 100vw, 33vw"
+          unoptimized={true}
+          priority={img.id <= 6}
         />
       ) : (
         <div className="opacity-20 text-xs font-mono">
