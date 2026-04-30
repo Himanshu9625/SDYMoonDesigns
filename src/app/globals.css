@@ -1,26 +1,70 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html {
+  background-color: #000000;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    -webkit-text-size-adjust: 100%;
+    --white-hsl: 0,0%,0%;
+    --black-hsl: 0,0%,53.33%;
+    --safeLightAccent-hsl: 203.5,74.87%,37.45%;
+    --safeDarkAccent-hsl: 203.5,74.87%,37.45%;
+    --safeInverseAccent-hsl: 0,0%,100%;
+    --safeInverseLightAccent-hsl: 0,0%,100%;
+    --safeInverseDarkAccent-hsl: 0,0%,100%;
+    --accent-hsl: 203.5,74.87%,37.45%;
+    --lightAccent-hsl: 220,65.85%,91.96%;
+    --darkAccent-hsl: 0,0%,25.88%;
+    --base-font-size: 14px;
+    --heading-font-font-family: "Roboto Mono", monospace;
+    --body-font-font-family: "Roboto Mono", monospace;
+    --meta-font-font-family: "Roboto Mono", monospace;
+    
+    --siteBackgroundColor: hsla(var(--white-hsl), 1);
+    --siteTitleColor: hsla(var(--black-hsl), 1);
+    --navigationLinkColor: hsla(var(--black-hsl), 1);
+  }
+
+  body {
+    background-color: var(--siteBackgroundColor);
+    color: var(--siteTitleColor);
+    font-family: var(--body-font-font-family);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.masonry-grid {
+  column-count: 3;
+  column-gap: 16px;
 }
+
+@media (max-width: 768px) {
+  .masonry-grid {
+    column-count: 2;
+    column-gap: 8px;
+  }
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .masonry-item {
+    margin-bottom: 8px;
+  }
+}
+
+/* Helper to make the placeholder divs look like images for now */
+.placeholder-image {
+  width: 100%;
+  background-color: #1a1a1a; /* Dark gray for placeholder */
+  display: block;
+}
+
+/* specific aspect ratios for our grid simulation */
+.aspect-square { aspect-ratio: 1 / 1; }
+.aspect-landscape { aspect-ratio: 16 / 9; }
+.aspect-portrait { aspect-ratio: 3 / 4; }
