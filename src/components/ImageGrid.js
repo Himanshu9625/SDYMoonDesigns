@@ -27,6 +27,9 @@ export default function ImageGrid({ activeTab }) {
     16: { category: "website", src: "/Images/Website/website1.png" },
     17: { category: "logos", src: "/Images/Logos/logo7.png" },
     18: { category: "logos", src: "/Images/Logos/logo8.png" },
+    19: { category: "other", src: "" },
+    20: { category: "other", src: "" },
+    21: { category: "other", src: "" },
   };
   // We use perfectly calculated aspect ratios so the columns
   // sum to the exact same total height mathematically.
@@ -42,7 +45,8 @@ export default function ImageGrid({ activeTab }) {
     { id: 10, ratio: "aspect-video" }, // 0.5625W
     { id: 13, ratio: "aspect-square" },// 1W
     { id: 16, ratio: "aspect-square" },// 1W
-  ]; 
+    { id: 19, ratio: "aspect-square" },// 1W
+  ];
 
   const desktopCol2 = [
     { id: 2, ratio: "aspect-square" }, // 1W
@@ -51,6 +55,7 @@ export default function ImageGrid({ activeTab }) {
     { id: 11, ratio: "aspect-video" }, // 0.5625W
     { id: 14, ratio: "aspect-[16/23]" },// 1.4375W
     { id: 17, ratio: "aspect-video" }, // 0.5625W
+    { id: 20, ratio: "aspect-square" },// 1W
   ];
 
   const desktopCol3 = [
@@ -60,7 +65,8 @@ export default function ImageGrid({ activeTab }) {
     { id: 12, ratio: "aspect-video" }, // 0.5625W
     { id: 15, ratio: "aspect-square" },// 1W
     { id: 18, ratio: "aspect-video" }, // 0.5625W
-  ]; 
+    { id: 21, ratio: "aspect-square" },// 1W
+  ];
 
   // Mobile layout (1 column)
   const mobileItems = [
@@ -82,6 +88,9 @@ export default function ImageGrid({ activeTab }) {
     { id: 16, ratio: "aspect-square" },
     { id: 17, ratio: "aspect-video" },
     { id: 18, ratio: "aspect-video" },
+    { id: 19, ratio: "aspect-square" },
+    { id: 20, ratio: "aspect-square" },
+    { id: 21, ratio: "aspect-square" },
   ];
 
   const mapData = (col) => col.map(item => ({
