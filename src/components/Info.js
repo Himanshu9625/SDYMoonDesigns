@@ -4,16 +4,22 @@ export default function Info() {
       <div className="mb-4">ABOUT</div>
       <div className="space-y-6">
         <p>
-          SUDHANSHU YADAV IS A VISUAL ARTIST AND GRAPHIC DESIGNER, SPECIALISING IN ART DIRECTION AND DESIGN FOR THE MUSIC AND ENTERTAINMENT INDUSTRIES.
+          Sudhanshu Yadav aka Moon — Product & Brand Designer, Delhi, India.
         </p>
         <p>
-          AFTER EARNING A DIPLOMA IN GRAPHIC DESIGN AT COLLEGE IN 2015, HE WENT ON TO COMPLETE A BA (HONS) IN DIGITAL MEDIA AT FALMOUTH UNIVERSITY IN 2020.
+          I&apos;ve been obsessed with design for as long as I can remember. Not just how things look — but how they work, how they feel, and most importantly, what problem they solve. That&apos;s been my north star from day one.
         </p>
         <p>
-          SUDHANSHU HAS BEEN WORKING AS A FREELANCE DESIGNER SINCE 2017, BUILDING A PORTFOLIO OF WORK INCLUDING ALBUM ARTWORKS, MUSIC VIDEO & FILM TITLES, MERCHANDISE, ADVERTISING CAMPAIGNS, LOGOS, AND CREATIVE DIRECTION. HE HAS 5 YEARS OF EXPERIENCE IN DESIGN.
+          Over the years I&apos;ve worked across a wide range of design disciplines — brand identities, logos, social media presence, posters, UI redesigns, and app icon design. Every project, big or small, starts with the same question: what&apos;s broken, and how do I fix it visually?
         </p>
         <p>
-          HIS PORTFOLIO INCLUDES WORK FOR ARTIST SUCH AS POST MALONE, SKRILLEX, MS. LAURYN HILL, AND LIL BABY. WORK WITH LEADING MUSIC LABELS INCLUDING UNIVERSAL MUSIC GROUP, ATLANTIC RECORDS, INTERSCOPE, AND REPUBLIC RECORDS. HIS CLIENT BASE ALSO INCLUDES BRANDS LIKE AMAZON PRIME VIDEO, ARSENAL FC, META, AND OAKLEY. A FULL LIST OF CLIENTS CAN BE FOUND <span className="text-white hover:underline cursor-pointer">HERE</span>.
+          My biggest project to date is Streamifly.in — a company I co-founded and designed from the ground up. From the brand identity to the product interface, I owned the entire visual direction. It&apos;s the project I&apos;m most proud of, and the one that taught me the most.
+        </p>
+        <p>
+          I believe good design doesn&apos;t just look great — it builds trust, communicates clearly, and makes people feel something. Whether I&apos;m crafting a logo that represents an entire brand, redesigning an app interface to feel more intuitive, or designing an icon that stands out on a home screen — I bring the same level of care and intention to every pixel.
+        </p>
+        <p>
+          If you&apos;re a brand looking for a designer who genuinely gives a damn about your problem — let&apos;s talk.
         </p>
       </div>
 
