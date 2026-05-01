@@ -143,19 +143,35 @@ export default function ImageGrid({ activeTab }) {
     </motion.div>
   );
 
+  const allDesktopOrdered = (() => {
+    const cols = [desktopCol1, desktopCol2, desktopCol3];
+    const maxRows = Math.max(...cols.map(c => c.length));
+    const out = [];
+    for (let r = 0; r < maxRows; r++)
+      for (let c = 0; c < 3; c++)
+        if (cols[c][r]) out.push(cols[c][r]);
+    return out;
+  })();
+
+  const filteredDesktop = filterItems(allDesktopOrdered);
+  const numCols = Math.min(3, filteredDesktop.length || 1);
+  const desktopCols = Array.from({ length: numCols }, () => []);
+  filteredDesktop.forEach((item, i) => desktopCols[i % numCols].push(item));
+
+  const desktopWidthClass = numCols === 1 ? "max-w-[33%]" : numCols === 2 ? "max-w-[66%]" : "";
+
   return (
     <main className="px-4 md:px-8 mt-16 md:mt-14">
       {/* Desktop Grid (Hidden on Mobile) */}
-      <div className="hidden md:grid grid-cols-3 gap-2 items-start">
-        <div className="flex flex-col gap-2">
-          {filterItems(desktopCol1).map(renderItem)}
-        </div>
-        <div className="flex flex-col gap-2">
-          {filterItems(desktopCol2).map(renderItem)}
-        </div>
-        <div className="flex flex-col gap-2">
-          {filterItems(desktopCol3).map(renderItem)}
-        </div>
+      <div
+        className={`hidden md:grid gap-2 items-start mx-auto ${desktopWidthClass}`}
+        style={{ gridTemplateColumns: `repeat(${numCols}, 1fr)` }}
+      >
+        {desktopCols.map((col, i) => (
+          <div key={i} className="flex flex-col gap-2">
+            {col.map(renderItem)}
+          </div>
+        ))}
       </div>
 
       {/* Mobile Grid (Hidden on Desktop) */}
