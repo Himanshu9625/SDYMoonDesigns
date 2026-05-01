@@ -7,7 +7,7 @@ export default function Navbar({ activeTab, setActiveTab }) {
 
   return (
     <>
-      <header className="sticky top-0 z-40 flex items-center justify-between px-4 py-2 md:px-8 md:py-4 bg-black/90 backdrop-blur-sm">
+      <header className="sticky top-0 z-40 flex items-center justify-between px-4 py-2 md:px-8 md:py-4 bg-black/95 backdrop-blur-sm">
         {/* Mobile Hamburger → X (in-place, never moves) */}
         <button
           onClick={() => setIsMobileMenuOpen((v) => !v)}
