@@ -27,9 +27,9 @@ export default function ImageGrid({ activeTab }) {
     16: { category: "website", src: "/Images/Website/website1.png" },
     17: { category: "logos", src: "/Images/Logos/logo7.png" },
     18: { category: "logos", src: "/Images/Logos/logo8.png" },
-    19: { category: "other", src: "" },
-    20: { category: "other", src: "" },
-    21: { category: "other", src: "" },
+    19: { category: "logos", src: "/Images/Logos/logo9.png" },
+    20: { category: "logos", src: "/Images/Logos/logo10.png" },
+    21: { category: "logos", src: "/Images/Logos/logo11.png" },
   };
   // We use perfectly calculated aspect ratios so the columns
   // sum to the exact same total height mathematically.
