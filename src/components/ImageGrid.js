@@ -150,7 +150,7 @@ export default function ImageGrid({ activeTab }) {
       </div>
 
       {/* Mobile Grid (Hidden on Desktop) */}
-      <div className="flex md:hidden flex-col gap-1 items-start">
+      <div className="flex md:hidden flex-col gap-3 items-start">
         {filterItems(mobileItems).map(renderItem)}
       </div>
 

@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import ImageGrid from "../components/ImageGrid";
 import Info from "../components/Info";
 import Footer from "../components/Footer";
+import MobileTaskbar from "../components/MobileTaskbar";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("all");
@@ -18,6 +19,7 @@ export default function Home() {
       </main>
 
       <Footer />
+      <MobileTaskbar />
     </div>
   );
 }
