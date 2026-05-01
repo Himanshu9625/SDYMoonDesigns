@@ -1,6 +1,6 @@
 export default function Info() {
   return (
-    <div className="max-w-3xl mx-auto px-4 md:px-8 mt-16 md:mt-24 text-[10px] md:text-[11px] leading-6 tracking-[0.15em] text-neutral-400 font-mono uppercase" style={{ fontFamily: '"Menlo", "Monaco", monospace' }}>
+    <div className="max-w-3xl mx-auto px-4 md:px-8 mt-16 md:mt-24 text-[12px] md:text-[11px] leading-6 tracking-[0.15em] text-neutral-400 font-mono uppercase" style={{ fontFamily: '"Menlo", "Monaco", monospace' }}>
       <div className="mb-4">ABOUT</div>
       <div className="space-y-6">
         <p>
