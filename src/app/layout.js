@@ -1,22 +1,22 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "SDYMoonDesigns",
+  title: "Sdymoondesign",
   description: "Welcome to the official portfolio of MoonDesigns - creative solutions for your digital presence. Explore our work, learn about our services, and get in touch to bring your ideas to life.",
   icons: {
     icon: "/BrandLogo.svg",
     apple: "/BrandLogo.svg",
   },
   openGraph: {
-    title: "SDYMoonDesigns",
+    title: "Sdymoondesign",
     description: "Welcome to the official portfolio of MoonDesigns - creative solutions for your digital presence. Explore our work, learn about our services, and get in touch to bring your ideas to life.",
-    siteName: "SDYMoonDesigns",
+    siteName: "Sdymoondesign",
     images: [
       {
         url: "/Social-Thumbnail.jpg",
         width: 1200,
         height: 630,
-        alt: "SDYMoonDesigns Thumbnail",
+        alt: "Sdymoondesign Thumbnail",
       },
     ],
     locale: "en_US",
@@ -24,14 +24,14 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SDYMoonDesigns",
+    title: "Sdymoondesign",
     description: "Welcome to the official portfolio of MoonDesigns - creative solutions for your digital presence. Explore our work, learn about our services, and get in touch to bring your ideas to life.",
     images: ["/Social-Thumbnail.jpg"],
   },
-  keywords: ["SDYMoonDesigns", "Portfolio", "Creative", "Design", "Web Development", "Digital Solutions"],
-  authors: [{ name: "SDYMoonDesigns" }],
-  creator: "SDYMoonDesigns",
-  publisher: "SDYMoonDesigns",
+  keywords: ["Sdymoondesign", "Portfolio", "Creative", "Design", "Web Development", "Digital Solutions"],
+  authors: [{ name: "Sdymoondesign" }],
+  creator: "Sdymoondesign",
+  publisher: "Sdymoondesign",
   formatDetection: {
     email: false,
     address: false,
